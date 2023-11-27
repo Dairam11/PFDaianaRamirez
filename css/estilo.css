@@ -4,7 +4,7 @@ header {
   background-color: #c0abab; }
 
 .logonav {
-  width: 15%;
+  width: 20%;
   border-radius: 50%; }
 
 .fondoNav {
@@ -34,7 +34,8 @@ h2 {
   font-size: 1.8rem;
   font-style: italic;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  color: white; }
 
 /*main*/
 main {
@@ -159,7 +160,9 @@ footer {
     transform: scale(1.1, 1.1); }
 
 .botonCard {
-  background-color: #e9e0e0; }
+  background-color: #e9e0e0;
+  color: #47413b;
+  font-weight: bold; }
 
 /*quienesomos*/
 .quienSoy {
@@ -184,7 +187,7 @@ footer {
 .perfil {
   grid-area: perfil;
   width: 80%;
-  border-radius: 40%;
+  border-radius: 50%;
   margin: 10px;
   padding: 10px;
   align-self: center;
@@ -196,9 +199,10 @@ footer {
   align-self: center;
   justify-self: center;
   font-size: 1.5rem;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px;
-  width: 100%; }
+  width: 100%;
+  background-color: #e9e0e0; }
 
 .texto2 {
   grid-area: texto2;
@@ -208,7 +212,8 @@ footer {
   justify-self: center;
   margin: 10px;
   padding: 10px;
-  width: 100%; }
+  width: 100%;
+  background-color: #e9e0e0; }
 
 @media screen and (max-width: 768px) {
   .quienSoy {
@@ -331,15 +336,32 @@ footer {
 
 .formulario {
   grid-area: formulario;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: #e9e0e0;
   border-radius: 3px;
   border: solid 3px #c0abab;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: #47413b;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold; }
+  .formulario .formItem {
+    flex-direction: column;
+    outline: none;
+    margin: 10px;
+    border: solid 2px #c0abab;
+    background-color: #e9e0e0; }
+  .formulario .botones {
+    background-color: #c0abab;
+    border: 0;
+    padding: 4px;
+    color: white; }
 
 .div2 {
   grid-area: div2; }

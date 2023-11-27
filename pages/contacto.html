@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fondoNav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img class="logonav" src="../img/logo.jpeg" alt="logo de la marca">
+                <a class="navbar-brand" href="../index.html"> <img class="logonav" src="../img/logo.jpeg" alt="logo de la marca">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -65,33 +65,27 @@
             <form action="" class="contacto formulario">
                 <div>
                     <label for="name">*Escribe tu apellido y nombre: </label>
-                    <input type="text" placeholder="Ramirez Daiana" name="name" required>
+                    <input type="text" class="formItem" placeholder="Ramirez Daiana" name="name" required>
                 </div>
-                <br>
                 <div>
                     <label for="tel"> *Número de telefono: </label>
-                    <input type="number" name="tel" required>
+                    <input type="number" class="formItem" name="tel" required>
                 </div>
-                <br>
-                <div>
+                <div >
                     <label for="mail"> *Email adress: </label>
-                    <input type="email" name="mail">
+                    <input type="email" class="formItem" name="mail">
                 </div>
-                <br>
                 <div>
                     <label for="Mensaje"> Escribe un mensaje: </label>
-                    <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Dejá tu mensaje"></textarea>
+                    <textarea name="" id="" class="formItem" cols="30" rows="10" placeholder="Dejá tu mensaje"></textarea>
                 </div>
-                <br>
-                <div>
+                <div >
                     <label for="terminos"> Acepto términos y condiciones </label>
-                    <input type="checkbox" name="terminos">
+                    <input type="checkbox"   name="terminos">
                 </div>
-                <br>
-                <div>
-                    <input type="submit" value="Enviar Datos">
-                    <input type="reset" value="Borrar Formulario">
+                <div >
+                    <input type="submit" class="botones" value="Enviar Datos">
+                    <input type="reset" class="botones" value="Borrar Formulario">
                 </div>
             </form>
             <div class="contacto div2">
