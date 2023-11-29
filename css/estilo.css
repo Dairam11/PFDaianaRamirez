@@ -20,18 +20,19 @@ header {
   font-size: 1.5rem; }
   .miBarra li a:hover {
     background-color: #c0abab;
-    border-radius: 15px;} 
-  .navBoton{
-      border: none;}
-  .navBoton:focus{
-      box-shadow: none;}
-      
+    border-radius: 15px; }
+
+.navBoton {
+  border: none; }
+  .navBoton:focus {
+    box-shadow: none; }
+
 @media screen and (max-width: 480px) {
-  .navbar{
+  .navbar {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; }
-}
+    flex-wrap: nowrap; } }
+
 h1 {
   color: #47413b;
   text-shadow: 0 0 20px #ffff;
@@ -140,8 +141,7 @@ footer {
   .grillaContainer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "uno lista" 
- "dos dos"; }
+    grid-template-areas: "uno lista"  "dos dos"; }
   .titulo {
     font-size: 1.5rem;
     height: auto;
@@ -152,17 +152,12 @@ footer {
   .grillaContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "uno" 
-    "lista" 
-    "dos"; }
+    grid-template-areas: "uno"  "lista"  "dos"; }
   .titulo {
     font-size: 1;
     height: auto;
     flex-direction: column;
-    text-align: center; } 
-  
-  }
+    text-align: center; } }
 
 /*servicios.html*/
 .tituloServicio {

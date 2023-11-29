@@ -22,14 +22,16 @@ header {
     margin: 10px;
     font-weight: bold;
     font-size: 1.5rem;
-
     &:hover {
         background-color: $color-rosaoscuro;
         border-radius: 15px;
     }
+}
 
-    .navBoton {
-        border: none;
+.navBoton {
+    border: none;
+    &:focus{
+        box-shadow: none;
     }
 }
 
