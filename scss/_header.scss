@@ -27,6 +27,18 @@ header {
         background-color: $color-rosaoscuro;
         border-radius: 15px;
     }
+
+    .navBoton {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
 
 h1 {
