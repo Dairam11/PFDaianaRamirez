@@ -1,133 +1,141 @@
 /*contacto*/
+main {
+    .padreContacto {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: "div1 div1 div1" "div2 formulario div3";
 
-.padreContacto {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "div1 div1 div1" "div2 formulario div3";
-}
+        .contacto {
+            width: auto;
+        }
 
-.contacto {
-    width: auto;
-}
+        .div1 {
+            grid-area: div1;
+        }
 
-.div1 {
-    grid-area: div1;
-}
-
-.formulario {
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: $color-rosado;
-    border-radius: 3px;
-    border: solid 3px $color-rosaoscuro;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    color: $color-oscuro;
-    outline: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    
-
-    .formItem{
-        flex-direction: column;
-        outline: none;
-        margin: 10px;
-        border: solid 2px $color-rosaoscuro;
-        background-color: $color-rosado;
-       
-    }
-    .botones{
-        background-color: $color-rosaoscuro;
-        border: 0;
-        padding: 4px;
-        color: white;
-    }
-
-}
-
-.div2 {
-    grid-area: div2;
-}
-
-.div3 {
-    grid-area: div3;
-
-    h3 {
-        text-align: center;
-        font-weight: bold;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-name: aparece;
-    }
-}
-
-@keyframes aparece {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.listaContacto {
-    list-style: none;
-
-    li {
-        text-decoration: none;
-        text-align: center;
-
-        a {
-            text-decoration: none;
+        .formulario {
+            grid-area: formulario;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: $color-rosado;
+            border-radius: 3px;
+            border: solid 3px $color-rosaoscuro;
+            justify-self: center;
+            align-self: center;
             text-align: center;
             color: $color-oscuro;
-            font-size: 1.5rem;
+            outline: none;
+            font-size: 1.2rem;
+            font-weight: bold;
 
-            &:hover {
+            .formItem {
+                flex-direction: column;
+                outline: none;
+                margin: 10px;
+                border: solid 2px $color-rosaoscuro;
+                background-color: $color-rosado;
+
+            }
+
+            .botones {
                 background-color: $color-rosaoscuro;
-                color: black;
+                border: 0;
+                padding: 4px;
+                color: $color-blanco;
             }
         }
+
+        .div2 {
+            grid-area: div2;
+
+            .fotoUltima {
+                width: 70%;
+                margin: 3px;
+                padding: 3px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                box-shadow: 0 0 8px $color-iluminaciones
+            }
+        }
+
+        .div3 {
+            grid-area: div3;
+
+            h3 {
+                text-align: center;
+                font-weight: bold;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-name: aparece;
+            }
+
+            .listaContacto {
+                list-style: none;
+
+                li {
+                    text-decoration: none;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        text-align: center;
+                        color: $color-oscuro;
+                        font-size: 1.5rem;
+
+                        &:hover {
+                            background-color: $color-rosaoscuro;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        @keyframes aparece {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
     }
-}
 
-.fotoUltima {
-    width: 70%;
-    margin: 3px;
-    padding: 3px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 0 8px $color-iluminaciones
-}
-
-@media screen and (max-width: 768px) {
-    .padreContacto {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr 2fr;
-        grid-template-areas: "div1 div1" "div2 formulario" "div3 div3";
+    @media screen and (max-width: 768px) {
+        .padreContacto {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr 2fr;
+            grid-template-areas: 
+            "div1 div1" 
+            "div2 formulario" 
+            "div3 div3";
+        }
     }
-}
 
-@media screen and (max-width: 480px) {
-    .padreContacto {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 1fr 1fr;
-        grid-template-areas: "div1" "formulario" "div2" "div3";
+    @media screen and (max-width: 480px) {
+        .padreContacto {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr 1fr 1fr;
+            grid-template-areas: 
+            "div1" 
+            "formulario" 
+            "div2" 
+            "div3";
+        }
     }
 }

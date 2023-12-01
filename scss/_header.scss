@@ -3,59 +3,69 @@
 header {
     text-align: center;
     background-color: $color-rosaoscuro;
-}
 
-.logonav {
-    width: 20%;
-    border-radius: 50%;
-}
+    .fondoNav {
+        background: linear-gradient(to right, $color-oscuro, $color-rosado);
+        width: 100% auto;
 
-.fondoNav {
-    background: linear-gradient(to right, $color-oscuro, $color-rosado);
-    width: 100% auto;
-    height: 10%;
-}
+        .logonav {
+            width: 20%;
+            margin: 10px;
+            padding: 3px;
+            border-radius: 50%;
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-start;
+        }
 
-.miBarra li a {
-    color: $color-iluminaciones;
-    padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 1.5rem;
-    &:hover {
-        background-color: $color-rosaoscuro;
-        border-radius: 15px;
+        .navBoton {
+            border: none;
+            &:focus {
+            box-shadow: none;
+            }
+        }
+
+        .miBarra {
+            li {
+                a {
+                    color: $color-iluminaciones;
+                    padding: 10px;
+                    margin: 10px;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    &:hover {
+                    background-color: $color-rosaoscuro;
+                    border-radius: 15px;
+                    }
+                }
+            }
+        }
     }
-}
 
-.navBoton {
-    border: none;
-    &:focus{
-        box-shadow: none;
+    .titulo {
+        h1 {
+            color: $color-oscuro;
+            text-shadow: 0 0 20px $color-iluminaciones;
+            text-align: center;
+            font-style: bold;
+            font-size: 2.5rem;
+            margin: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-style: italic;
+            text-align: center;
+            padding: 10px;
+            color: $color-blanco;
+        }
+
     }
-}
-
-@media screen and (max-width: 480px) {
-    .navbar {
+    
+    @media screen and (max-width: 480px) {
+        .orientacion{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        }
     }
-}
-
-h1 {
-    color: $color-oscuro;
-    text-shadow: 0 0 20px $color-iluminaciones;
-    text-align: center;
-    font-style: bold;
-    font-size: 2.5rem;
-    margin: 10px;
-}
-
-h2 {
-    font-size: 1.8rem;
-    font-style: italic;
-    text-align: center;
-    padding: 10px;
-    color: white
 }
